@@ -5,7 +5,7 @@ altitude = 0
 
 # Exercise #1: Construct while loops to do the following:
   # a. Query the user for the starting fuel level. Validate that the user enters a positive, integer value greater than 5000 but less than 30000. 
-while fuel_level <5000 or fuel_level > 30000:
+while fuel_level <=5000 or fuel_level > 30000:
   fuel_level = int(input("Enter Fuel Level between 5k and 30k:"))
 
 
@@ -27,7 +27,7 @@ print('The shuttle gained an altitude of', altitude, 'km and has', fuel_level, '
 
 # If the altitude is 2000 km or higher, add “Orbit achieved!” Otherwise add, “Failed to reach orbit.”
 if altitude >= 2000:
-   ending = 'Orbit achieved!'
+   print('Orbit achieved!')
 else:
-   ending = 'Failed to reach orbit.'
+   print('Failed to reach orbit.')
 
