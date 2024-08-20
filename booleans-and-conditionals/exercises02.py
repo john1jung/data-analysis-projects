@@ -1,5 +1,5 @@
 engine_indicator_light = "red blinking"
-space_suits_on = True
+space_suits_on = False
 shuttle_cabin_ready = True
 crewStatus = space_suits_on and shuttle_cabin_ready
 computerStatusCode = 200
@@ -33,5 +33,15 @@ else:
 
 
 # 4) PREDICT: Do the code blocks shown in the Section D produce the same result?
+if crewStatus and computerStatusCode == 200 and space_suits_on:
+   print("all systems go")
+else:
+   print("WARNING. Not ready")
 
+if crewStatus != True or computerStatusCode != 200 or not(space_suits_on):
+   print("WARNING. Not ready")
+else:
+   print("all systems go")
 # print("Yes" or "No")
+
+print(yes)
