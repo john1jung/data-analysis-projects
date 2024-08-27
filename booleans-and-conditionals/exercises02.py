@@ -1,9 +1,9 @@
 engine_indicator_light = "red blinking"
 space_suits_on = False
 shuttle_cabin_ready = True
-crewStatus = space_suits_on and shuttle_cabin_ready
-computerStatusCode = 200
-shuttleSpeed = 15000
+crew_status = space_suits_on and shuttle_cabin_ready
+computer_status_code = 200
+shuttle_speed = 15000
 
 # 3) Write conditional expressions to satisfy the following safety rules:
 
@@ -38,6 +38,7 @@ if crewStatus and computerStatusCode == 200 and space_suits_on:
 else:
    print("WARNING. Not ready")
 
+<<<<<<< HEAD
 if crewStatus != True or computerStatusCode != 200 or not(space_suits_on):
    print("WARNING. Not ready")
 else:
@@ -45,3 +46,6 @@ else:
 # print("Yes" or "No")
 
 print(yes)
+=======
+# print("Yes" or "No")
+>>>>>>> upstream/main
