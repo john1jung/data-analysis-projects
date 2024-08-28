@@ -39,3 +39,5 @@ print(cargo_hold)
 
 format_string = 'The list {0} contains {1} items'
 print(format_string.format(cargo_hold,len(cargo_hold)))
+print(f"The list {cargo_hold} contains {len(cargo_hold)} items")
+
