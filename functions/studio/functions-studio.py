@@ -1,4 +1,12 @@
 # We want to COMPLETELY reverse a list by flipping the order of the entries AND flipping the order of characters in each element.
+wordz = "This is a normal sentence."
+def reverse_characters(wordz):
+    wordz = list(wordz)
+    wordz.reverse()
+    wordz = ''.join(wordz)
+    return wordz
+print(reverse_characters(wordz))
+
 
 # a) Define a 'reverse_characters' function. Give it one parameter, which will be the string to reverse.
 # b) Within the function, use the 'list' function to split a string into a list of individual characters
@@ -7,7 +15,20 @@
 # e) Create a variable of type string to test your new function. # f) Use 'print(reverse_characters(my_variable_name))'; to call the function and verify that it correctly reverses the characters in the string.
 # g) Use method chaining to reduce the lines of code within the function.
 
-
+wordz = 12345
+def reverse_characters(wordz):
+    if type(wordz) == int: 
+        wordz = str(wordz)
+        wordz = list(wordz)
+        wordz.reverse()
+        wordz = ''.join(wordz)
+        wordz = int(wordz)
+    elif type(wordz) == str:
+        wordz = list(wordz)
+        wordz.reverse()
+        wordz = ''.join(wordz)
+    return wordz
+print(reverse_characters(wordz))
 
 # 2) The 'split' method does not work on numbers, but we want the function to return a number with all the digits reversed (e.g. 1234 converts to 4321 and NOT the string "4321")
 # a) Add an if statement to your reverse_characters function to check the typeof the parameter.
