@@ -70,7 +70,7 @@ print(make_isosceles_triangle(9))
 def make_isosceles_triangle(height):
     isosceles_triangle = ''
     for i in range(height):
-        isosceles_triangle += (make_space_line(height - i - 1 , 1 + (i*2)) + "\n")
+        isosceles_triangle += ( "\n"+  make_space_line(height - i - 1 , 1 + (i*2)) )
     return isosceles_triangle
 print(make_isosceles_triangle(9))
 

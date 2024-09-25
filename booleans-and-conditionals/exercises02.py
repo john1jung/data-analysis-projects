@@ -15,37 +15,37 @@ else:
 
 
 # b) If computer_status_code is 200, print "Please stand by. Computer is rebooting." Else if computer_status_code is 400, print "Success! Computer online." Else print "ALERT: Computer offline!"
-if computerStatusCode == 200:
-    print('Please stand by. Computer is rebooting.')
-elif computerStatusCode == 400:
-    print('Success! Computer online.')
-else:
-    print('ALERT: Computer offline!')
+# if computerStatusCode == 200:
+#     print('Please stand by. Computer is rebooting.')
+# elif computerStatusCode == 400:
+#     print('Success! Computer online.')
+# else:
+#     print('ALERT: Computer offline!')
 
 
-# c) If shuttle_speed is > 17,500, print "ALERT: Escape velocity reached!" Else if shuttle_speed is < 8000, print "ALERT: Cannot maintain orbit!" Else print "Stable speed".
-if shuttleSpeed > 17500:
-    print('ALERT: Escape velocity reached!')
-elif shuttleSpeed < 8000:
-    print('ALERT: Cannot maintain orbit!')
-else:
-    print('Stable Speed.')
+# # c) If shuttle_speed is > 17,500, print "ALERT: Escape velocity reached!" Else if shuttle_speed is < 8000, print "ALERT: Cannot maintain orbit!" Else print "Stable speed".
+# if shuttleSpeed > 17500:
+#     print('ALERT: Escape velocity reached!')
+# elif shuttleSpeed < 8000:
+#     print('ALERT: Cannot maintain orbit!')
+# else:
+#     print('Stable Speed.')
 
 
-# 4) PREDICT: Do the code blocks shown in the Section D produce the same result?
-if crewStatus and computerStatusCode == 200 and space_suits_on:
-   print("all systems go")
-else:
-   print("WARNING. Not ready")
+# # 4) PREDICT: Do the code blocks shown in the Section D produce the same result?
+# if crewStatus and computerStatusCode == 200 and space_suits_on:
+#    print("all systems go")
+# else:
+#    print("WARNING. Not ready")
 
-<<<<<<< HEAD
-if crewStatus != True or computerStatusCode != 200 or not(space_suits_on):
-   print("WARNING. Not ready")
-else:
-   print("all systems go")
-# print("Yes" or "No")
+# <<<<<<< HEAD
+# if crewStatus != True or computerStatusCode != 200 or not(space_suits_on):
+#    print("WARNING. Not ready")
+# else:
+#    print("all systems go")
+# # print("Yes" or "No")
 
-print(yes)
-=======
-# print("Yes" or "No")
->>>>>>> upstream/main
+# print(yes)
+# =======
+# # print("Yes" or "No")
+# >>>>>>> upstream/main
